@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | NFT preview card component</title>
+</head>
+<body class="bg-body grid place-items-center h-screen">
+  <div class="card bg-dark-blue w-[350px] p-5 rounded-xl">    
+    <div class="card-bg relative">
+      <img class="rounded-xl" src="../assets/image-equilibrium.jpg " alt="card background">
+
+      <div class="overlay opacity-0 rounded-xl hover:opacity-100 duration-300 cursor-pointer absolute top-0 w-full h-full bg-cyan/50 flex items-center justify-center">        
+        <img src="../assets/icon-view.svg" alt="Icon View">
+      </div>
+    </div>
+    <div class="card-info">
+      <h1 class="text-white text-xl font-bold duration-500 hover:text-cyan my-4">Equilibrium #3429</h1>
+      <p class="text-soft-blue text-lg">Our Equilibrum collection promotes balance and calm.</p>
+      <div class="card-price flex items-center justify-between my-4">
+        <p class="text-cyan flex items-center gap-2">
+          <img src="../assets/icon-ethereum.svg" alt="Ethereum Icon">
+          0.041 ETH
+        </p>
+        <p class="text-soft-blue flex items-center gap-2">
+          <img src="../assets/icon-clock.svg" alt="Clock Icon">
+          3 days left
+        </p>
+      </div>
+      <hr class="text-blue">
+      <div class="user-info flex items-center gap-5 my-5">
+        <img class="w-[50px] border-2 rounded-3xl border-white" src="../assets/image-avatar.png" alt="Avatar Image">
+        <p class="text-soft-blue">Creation of <span class="text-white duration-500 hover:text-cyan">Jules Wyvern</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution text-white">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="hover:text-cyan duration-500" href="https://www.linkedin.com/in/rodrigoviannas/">Rodrigo Vianna</a>.
+  </div>
+</body>
+</html>
